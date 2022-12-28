@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #F1F2F3;
+    font-size: 0.9em;
+}
+
+.accordion {
+    width: 50vw;
+    border-radius: 5px;
+    border: solid 1px #722DF9; 
+    overflow: hidden;   
+    outline: none;
+    margin-top: 30px;
+    background-color: #722DF9;
+}
+
+#firstItem,
+#secondItem {
+    border-bottom:#E7F1FF 1px solid; 
+} 
+
+.clickMe {
+    width: 100%;
+}
+
+.accordion-header{
+    background-color: #722DF9;
+    width: 100%;
+    font-weight: 800px;
+    font-size: 1.2em;
+    color: #E7F1FF;
+}
+
+.accordion-button {
+    width: 100%;
+    outline: none;  
+    background-color: transparent; 
+    border: none;
+    text-align: left;
+    padding: 5px; 
+}
+
+.accordion-item {
+    width: 100%;
+}
+
+.accordion-collapse {
+    max-height: 0px;
+    opacity: 0;
+    background-color: #E7F1FF;
+    overflow: hidden;
+    text-align: justify;
+    border: none;
+    transition: all 0.5s ease-in;
+}
+
+
+.active{
+    max-height: max-content;
+    opacity: 1;
+}
+
+.accordion-body {
+    padding: 10px 20px;
+}
+
+.accordion-header span {
+    font-size: 1.1em;
+    color: #E7F1FF;
+   
+}
+
+.bxs-chevron-down {
+    float: right;
+    font-size: 1.1em;
+    color: #E7F1FF;
+}
+
+.flipIcon {
+    transform: rotate(180deg);
+}
